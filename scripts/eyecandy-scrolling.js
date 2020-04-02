@@ -4,10 +4,14 @@ https://css-tricks.com/snippets/jquery/smooth-scrolling/
 ############################################################################ */
 
 // Scroll to a certain element
-document.querySelector('.js-scrollto').addEventListener("click", function(e) {
+document.querySelector(".js-scrollto").addEventListener(
+  "click",
+  function(e) {
     var target = this.getAttribute("href");
     e.preventDefault();
     document.querySelector(target).scrollIntoView({
-        behavior: 'smooth'
+      behavior: "smooth"
     });
-}, false);
+  },
+  false
+);
